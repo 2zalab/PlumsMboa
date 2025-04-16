@@ -1,0 +1,15 @@
+{
+    "data_dir": "data/african_plums_dataset",
+    "csv_path": "data/plums_data.csv",
+    "model_type": "efficientnet",
+    "batch_size": 32,
+    "img_size": [
+        224,
+        224
+    ],
+    "epochs": 50,
+    "feature_extraction_epochs": 10,
+    "fine_tuning_epochs": 40,
+    "learning_rate": 0.0001,
+    "timestamp": "20250407_235714"
+}

@@ -1,0 +1,222 @@
+/* 
+   Feuille de style personnalisée pour l'application PlumsMboa
+   Styles globaux et thème cohérent
+*/
+
+/* Variables globales */
+:root {
+    --primary-color: #5D3FD3;
+    --primary-light: rgba(93, 63, 211, 0.1);
+    --primary-gradient: linear-gradient(135deg, #5D3FD3, #9C27B0);
+    --secondary-color: #9C27B0;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+    --danger-color: #F44336;
+    --info-color: #2196F3;
+    --text-color: #333333;
+    --text-secondary: #666666;
+    --bg-light: #f8f9fa;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Styles généraux */
+.stApp {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+/* En-têtes */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Personnalisation des widgets Streamlit */
+.stButton > button {
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Personnalisation des métriques */
+.stMetric {
+    background-color: white;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.stMetric > div {
+    color: var(--primary-color);
+}
+
+/* Personnalisation des panneaux d'information */
+.stInfo {
+    background-color: rgba(33, 150, 243, 0.1);
+    border-left: 4px solid var(--info-color);
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.stSuccess {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 4px solid var(--success-color);
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.stWarning {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid var(--warning-color);
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.stError {
+    background-color: rgba(244, 67, 54, 0.1);
+    border-left: 4px solid var(--danger-color);
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Personnalisation des boutons radio */
+.stRadio > div {
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.stRadio > div > label {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.stRadio > div > label:hover {
+    background-color: var(--primary-light);
+}
+
+.stRadio > div > label[data-baseweb="radio"] {
+    margin-right: 0;
+}
+
+/* Personnalisation de la barre latérale */
+.sidebar .sidebar-content {
+    background: white;
+}
+
+/* Style pour les cartes */
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le sélecteur de fichier */
+.stFileUploader {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Style pour les dataframes */
+.stDataFrame {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+/* Style pour les onglets */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 10px 20px;
+    background-color: var(--bg-light);
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-image: var(--primary-gradient);
+    color: white;
+}
+
+/* Animation pour les éléments interactifs */
+.interactive {
+    transition: all 0.3s ease;
+}
+
+.interactive:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Classes utilitaires */
+.text-center {
+    text-align: center;
+}
+
+.gradient-text {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.gradient-bg {
+    background: var(--primary-gradient);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.border-top-gradient {
+    border-top: 3px solid;
+    border-image: var(--primary-gradient) 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(93, 63, 211, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(93, 63, 211, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(93, 63, 211, 0); }
+}
+
+.pulse {
+    animation: pulseGlow 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stRadio > div {
+        flex-direction: column !important;
+    }
+}

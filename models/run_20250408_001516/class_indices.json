@@ -1,0 +1,8 @@
+{
+    "bruised": 0,
+    "cracked": 1,
+    "rotten": 2,
+    "spotted": 3,
+    "unaffected": 4,
+    "unripe": 5
+}

@@ -1,0 +1,19 @@
+RÉSUMÉ DES PERFORMANCES DU MODÈLE
+==================================================
+Accuracy sur l'ensemble de test: 0.3958
+Loss sur l'ensemble de test: 1.7181
+
+F1-score moyen: 0.2624
+Précision moyenne: 0.2162
+Rappel moyen: 0.3958
+
+Performances par catégorie:
+--------------------------------------------------
+Catégorie    Précision  Rappel     F1-Score  
+--------------------------------------------------
+bruised      0.0000     0.0000     0.0000    
+cracked      0.0000     0.0000     0.0000    
+rotten       0.0000     0.0000     0.0000    
+spotted      0.0000     0.0000     0.0000    
+unaffected   0.4027     0.9362     0.5632    
+unripe       0.3400     0.2061     0.2566    
