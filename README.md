@@ -139,11 +139,11 @@ python src/predict.py --image_path chemin/vers/image.jpg
 
 ## 👥 Équipe
 
-- Chef d'équipe : [Nom]
-- Développeur IA : [Nom]
-- Data Scientist : [Nom]
-- Développeur Frontend : [Nom]
-- Expert en Agroalimentaire : [Nom]
+- Chef d'équipe et Développeur IA : Isaac Touza
+- Data Scientist : Sali Emmanuel
+- Developpeur Backend : Mana Tchindebe Etienne
+- Développeur Frontend : Mohamed El Bachir
+- Expert en Agroalimentaire : Massama Barnabas
 
 ## 📊 Jeu de données
 
